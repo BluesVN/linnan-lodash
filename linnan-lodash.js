@@ -1,8 +1,11 @@
 //2018.3.28 Dylan ，试着写lodash，之后精简代码。
 var BluesVN = {
-  /**
-   * 说明文档
-   */
+	/**
+	 * [chunk description]
+	 * @param  {[type]} array [description]
+	 * @param  {Number} size  [description]
+	 * @return {[type]}       [description]
+	 */
   chunk: function (ary, size = 1) {
     let res = [];
     for (let i = 0; i < ary.length; i += size) {
