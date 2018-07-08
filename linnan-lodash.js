@@ -203,12 +203,10 @@ var BluesVN = {
    */
   matches: function (source) {
     return function (obj) {
-
-      for (var prop in) {
-
-      }
-      if (!BluesVN.isEqual(source, obj)) {
-        return false
+      for (var prop in source) {
+        if (!BluesVN.isEqual(source[prop], obj[prop])) {
+          return false
+        }
       }
       return true
     }
